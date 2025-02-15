@@ -8,8 +8,7 @@ Este repositório contém uma implementação do algoritmo de **Pesquisa Binári
 - [Como funciona](#como-funciona)
 - [Complexidade](#complexidade)
 - [Exemplo de código](#exemplo-de-código)
-- [Como executar](#como-executar)
-- [Referências](#referências)
+
 
 ## Descrição
 
