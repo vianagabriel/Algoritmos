@@ -8,7 +8,7 @@ import (
 func main() {
 	numeros := []int{1, 2, 3, 4, 5, 15, 16, 18, 22, 33, 57, 69, 88, 100, 112, 511, 805, 1200, 5522}
 
-	indice, err := PesquisaBin(numeros, 444)
+	indice, err := PesquisaBin(numeros, 18)
 	if err != nil {
 		fmt.Println(err)
 	} else {
