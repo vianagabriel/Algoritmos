@@ -1,29 +1,28 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
-	array := []int{102, 23, 67, 74, 22, 5, 10, 43, 2, 1}
+	array := []int{8, 4, 2, 5, 3}
+	fmt.Println(array)
+	Ordenacao(array)
+	fmt.Println(array)
 
-	fmt.Println(array)
-	OrdenacaoSelecao(array)
-	fmt.Println(array)
 }
 
-func OrdenacaoSelecao(array []int) {
-	for i := 0; i < len(array); i++ {
-		numAnterior := i
+func Ordenacao(arr []int) {
+	for i := 0; i < len(arr); i++ {
+		posAnterior := i
 
-		for j := numAnterior + 1; j < len(array); j++ {
-			if array[j] < array[numAnterior] {
-				numAnterior = j
+		for j := i + 1; j < len(arr); j++ {
+			if arr[j] < arr[posAnterior] {
+				posAnterior = j
 			}
 		}
-		Temp := array[i]
-		array[i] = array[numAnterior]
-		array[numAnterior] = Temp
-	}
 
+		temp := arr[i]
+		arr[i] = arr[posAnterior]
+		arr[posAnterior] = temp
+
+	}
 }
