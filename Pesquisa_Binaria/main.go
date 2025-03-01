@@ -20,7 +20,7 @@ func PesquisaBin(numeros []int, numAlvo int) (int, error) {
 	inicio := 0
 	final := len(numeros) - 1
 
-	for i := 0; i <= final; i++ {
+	for inicio <= final {
 		posMeio := (inicio + final) / 2
 		palpite := numeros[posMeio]
 
